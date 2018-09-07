@@ -1,0 +1,10 @@
+sudo: required
+
+language: generic
+
+services:
+- docker
+
+env:
+  global:
+  - DOCKER_REPO=jlesage/baseimage-gui
