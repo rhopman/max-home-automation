@@ -9,3 +9,9 @@ ENV APP_NAME="MAX! Home Automation"
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
+
+# Expose ports
+EXPOSE 5800 5900
+
+# Create volume
+VOLUME /config
