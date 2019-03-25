@@ -2,7 +2,7 @@ FROM jlesage/baseimage-gui:debian-9
 
 # Install max-home-automation.
 COPY sources.list.d/* /etc/apt/sources.list.d/
-RUN add-pkg max-home-automation-2.18
+RUN add-pkg libpython3.6-dev max-home-automation-2.18
 
 # Set the name of the application.
 ENV APP_NAME="MAX! Home Automation"
